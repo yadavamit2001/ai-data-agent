@@ -22,5 +22,5 @@ RUN mkdir -p uploads
 # Expose port
 EXPOSE 8000
 
-# Command to run the application
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Command to run the application - YE LINE CHANGE KARO
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
